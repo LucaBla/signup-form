@@ -20,26 +20,42 @@
   </div>
   <div class="content">
     <div class="description">
-      Sign up now and get the most insane features ever like NOTHING, or ABSOLUTLY NOTHING.
-      Be fast there is only limited access for the first 43 Users!
+      Sign up now and get the most insane features ever like NOTHING, or ABSOLUTLY NOTHING. <br>
+      Be fast there is only limited access for the first 43 Users! <br> <br>
 
-      You dont wanna miss this chance or do you?
-      <form action="">
-        <label for="first-name">First Name</label>
-        <input type="text" id="first-name">
-        <label for="last-name">Last Name</label>
-        <input type="text" id="last-name">
-        <label for="email">E-Mail</label>
-        <input type="email" id="email">
-        <label for="phone">Phone number</label>
-        <input type="tel" id="phone">
-        <label for="pw">Password</label>
-        <input type="password" id="pw">
-        <label for="confirm-pw">Confirm password</label>
-        <input type="password" id="confirm-pw">
-        <button type="submit"></button>
-      </form>
+      You dont wanna miss this chance or do you? <br>
+    </div>
+    <form action="">
+      <legend>Sign Up Now!</legend>
+      <div class="form-bg">
+        <div class="form-column1">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" required>
+          <br>
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" required>
+          <br>
+          <label for="pw">Password</label>
+          <input type="password" id="pw" required>
+          <p id='error-message'>*Passwords do not match</p>
+        </div>
+        <div class="form-column2">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" required>
+          <br>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" required>
+          <br>
+          <label for="confirm-pw">Confirm Password</label>
+          <input type="password" id="confirm-pw" required>
+        </div>
+      </div>
+      <button type="submit">Create Account</button>
+    </form>
+    <div class="login">
+      Already have an account? <a href="blank">Log in</a>
     </div>
   </div>
 </body>
+<script src="password.js"></script>
 </html>

@@ -5,30 +5,32 @@
 
 body {
   display: flex;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(241, 243, 245);
   color: black;
   font-family: Norse;
+  margin-right: 0px;
 }
 
 .img-wrapper {
   margin-top: -8px;
   margin-bottom: -10px;
   margin-left: -10px;
-  height: 100vh;
+  min-height: 100vh;
   width: 30vw;
-  box-shadow: 1px 0px 3px black;
 }
 
 img{
   width: 30vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   position: relative;
   margin-bottom: -10px;
+  z-index: 9;
 }
 
 #odin-img{
-  width: 4.8vw;
-  height: 12vh;
+  width: 100px;
+  min-height: 120px;
   vertical-align: text-bottom;
   margin-right: -15px;
 }
@@ -51,7 +53,7 @@ img{
   color: white;
   font-size: 18px;
   position: absolute;
-  top: 97vh;
+  margin-top: 96vh;
   z-index: 10;
   text-align: center;
   width: 30vw;
@@ -60,4 +62,115 @@ img{
 
 .credits >a {
   color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15vh;
+  margin-left: 5vw;
+  font-family: Helvetica;
+  z-index: 0;
+}
+
+.description {
+  width: 80%;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin-bottom: 5vh;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.form-bg {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: rgba(29, 29, 29, 0.89);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.507);
+  padding-left: 5vw;
+  margin-left: -4.99vw;
+  padding: 80px 0px 20px 0px;
+}
+
+legend {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 0px;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgba(29, 29, 29, 0.89);
+}
+
+input{
+  width: 250px;
+  height: 25px;
+  margin-bottom: 15px;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  outline: 2px solid rgb(81, 81, 255);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.error {
+  outline: 1px solid red;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#error-message{
+  opacity: 0%;
+  color: red;
+  padding: 0px;
+  margin: -10px 0px 0px 0px;
+  font-size: 12px;
+}
+
+button {
+  margin-top: 5vh;
+  width: 180px;
+  height: 60px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover {
+  background-color: rgb(1, 155, 1);
+}
+
+.login {
+  margin-top: 5vh;
+  font-weight: bold;
+}
+
+.login > a {
+  text-decoration: none;
+  color: green;
+}
+
+.login >a:hover {
+  color: rgb(1, 155, 1);
+}
+
+.form-column1 {
+  width: 200px;
+  margin-left: 5vw;
+  margin-right: 15vw;
+}
+
+.form-column2 {
+  width: 200px;
+}
+
+input::after {
+  content: 'atze';
+  color: red;
 }
